@@ -17,6 +17,7 @@ namespace LagoMusicalBLL
             CancionENT primerCancion = clsCancionDAO.Canciones.ToList().Where(x => x.sonidos.Contains(valuesonido)).FirstOrDefault();
             int indexSonido = primerCancion.sonidos.ToList().IndexOf(valuesonido);
             
+
             if (indexSonido>-1)
             {
                 for (int i = indexSonido + 1; i < primerCancion.sonidos.Length; i++)

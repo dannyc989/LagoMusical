@@ -20,7 +20,7 @@ namespace UnitTestLagoMusical
 
             string sonidoBuscar2 = "pep";
             string valorEsperado2 = "birip,trri-trri,croac";
-
+            
             var actual2 = objCancion.getRestoCancion(sonidoBuscar2);
             Assert.AreEqual(valorEsperado2, actual2);
 
